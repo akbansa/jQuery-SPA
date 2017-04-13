@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Anshul Bansal | Front-End</title>
+    <link rel="icon" href="image/favicon.ico">
+    <style>body{display: none;}
+    </style>
+    <link href="css/style.css" rel="stylesheet"/>
+    <link href="css/graph.css" rel="stylesheet"/>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/js.js"></script>
+    <link href="css/custom.css" rel="stylesheet"/>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+</head>
+<body class="wrapper">
+<div class="container-fluid">
+    <div class="col-xs-12 col-sm-offset-4 col-sm-4 col-md-offset-4 col-md-4 col-lg-offset-4 col-lg-4">
+        <div class="row">
+            <h1 id="welcome" style="padding-bottom: 40px;" class="text-center"></h1>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-offset-4 col-sm-4 col-md-offset-4 col-md-4 col-lg-offset-4 col-lg-4">
+        <div class="row">
+            <input type="input" id="name" class="form-control" placeholder="Enter Name"/>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-offset-4 col-sm-4 col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6">
+        <div class="row">
+            <p id="q" class="text-center"></p>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-offset-4 col-sm-4 col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6">
+        <div id="option" class="text-center"></div>
+    </div>
+    <div class="col-xs-12 col-sm-offset-4 col-sm-4 col-md-offset-3 col-md-6 col-lg-offset-3 col-lg-6">
+        <div class="buttonq">
+            <button class="btn btn-lg submit" id="nameSubmit">Take Quiz</button>
+        </div>
+        <div class="button">
+            <button class="btn btn-lg next" id="next">Next</button>
+        </div>
+        <div class="button">
+            <button class="btn btn-lg result" id="result">Result</button>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-1 col-lg-10" id="showResult">
+        <div class="row">
+            <table class="table">
+                <thead class="thead-default">
+                <tr>
+                    <th>#</th>
+                    <th>Question</th>
+                    <th>Expected Answer</th>
+                    <th>Your Answer</th>
+                </tr>
+                </thead>
+                <tbody id="resultTab">
+                </tbody>
+            </table>
+        </div>
+        <div class="button">
+            <button class="btn btn-lg chart" id="showGraph">Show Graph</button>
+        </div>
+    </div>
+    <div id="graph" class="col-xs-12 col-sm-offset-4 col-sm-4 col-md-offset-2 col-md-8 col-lg-offset-2 col-lg-8">
+        <div class="css_bar_graph">
+            <ul class="y_axis">
+                <li>100%</li><li>80%</li><li>60%</li><li>40%</li><li>20%</li><li>0%</li>
+            </ul>
+            <ul class="x_axis"><li>Correct</li><li>Incorrect</li>
+            </ul>
+            <div class="graph">
+                <ul class="grid">
+                   <li></li><li></li><li></li><li></li><li></li><li class="bottom"></li>
+                </ul>
+                <ul>
+                    <li class="bar nr_1 green" id="correct">
+                    <div class="top"></div><div class="bottom"></div>
+                        <span class="correct"></span>
+                    </li>
+                    <li class="bar nr_2 red" id="incorrect">
+                    <div class="top"></div><div class="bottom"></div>
+                        <span class="incorrect"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <p class="text-center">Some of questions are based on my resume and some of them are about your company!</p>
+    </div>
+</div>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+body	{
+	padding: 0px;
+	background-color: #eeeeee;
+	}
+div.css_bar_graph	{	width: 310px;
+	height: 367px;
+	padding: 40px 20px 10px 70px;
+	font-size: 16px;
+	font-family: arial, sans-serif;
+	font-weight: normal;
+	color: #444444;
+	background-color: #ffffff;
+	position: relative;
+ 	margin-left: auto;
+	margin-right: auto;
+		border: 1px solid #d5d5d5;
+		border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	}
+	div.css_bar_graph a	{	color: #444444;
+	text-decoration: none;
+	}
+	div.css_bar_graph ul	{	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	}
+	div.css_bar_graph li	{	margin: 0px;
+	padding: 0px;
+	}
+/* ==================== Y-AXIS LABELS ==================== */div.css_bar_graph ul.y_axis	{	width: 50px;
+	position: absolute;
+	top: 40px;
+	left: 10px;
+	text-align: right;
+	}
+	div.css_bar_graph ul.y_axis li	{	width: 100%;
+	height: 49px;
+		float: left;
+	color: #888888;
+		border-top: 1px solid transparent;
+	position: relative;
+	top: -13px;
+	/* value = font height */	}
+		/* ==================== X-AXIS LABELS  ==================== */div.css_bar_graph ul.x_axis	{	width: 100%;
+	height: 50px;
+	position: absolute;
+	bottom: 0px;
+	left: 90px;
+	text-align: center;
+	}
+	div.css_bar_graph ul.x_axis li	{	display: inline;
+	width: 90px;
+	float: left;
+	}
+	/* ==================== GRAPH LABEL  ==================== */div.css_bar_graph div.label	{	width: 100%;
+	height: 50px;
+	float: left;
+	margin-top: 20px;
+	text-align: center;
+	}
+	div.css_bar_graph div.label span	{	font-weight: bold;
+	}
+	/* ==================== GRAPH  ==================== */div.css_bar_graph div.graph	{	width: 100%;
+	height: 100%;
+	float: left;
+	}
+	div.css_bar_graph div.graph ul.grid	{	width: 100%;
+	}
+div.css_bar_graph div.graph li	{	width: 100%;
+	height: 49px;
+		float: left;
+	border-top: 1px solid #e5e5e5;
+	}
+		div.css_bar_graph div.graph li:nth-child(odd)	{	width: 100%;
+	height: 49px;
+		float: left;
+	border-top: 1px solid #e5e5e5;
+	background-color: #f8f8f8;
+	}
+	div.css_bar_graph div.graph li:nth-child(even)	{	width: 100%;
+	height: 49px;
+		float: left;
+	border-top: 1px solid #e5e5e5;
+	}
+	div.css_bar_graph div.graph li.bottom	{	border-top: 1px solid #d5d5d5;
+	background-color: #eeeeee;
+	height: 19px;
+	}
+	/* ==================== BARS COMMON  ==================== */div.css_bar_graph div.graph li.bar	{	width: 50px;
+	float: left;
+	position: absolute;
+	bottom: 70px;
+	text-align: center;
+			-webkit-transition: all 0.15s ease-in-out;
+	-moz-transition: all 0.15s ease-in-out;
+	-o-transition: all 0.15s ease-in-out;
+	-ms-transition: all 0.15s ease-in-out;
+	transition: all 0.15s ease-in-out;
+	}
+	div.css_bar_graph div.graph li.bar div.top	{	width: 100%;
+	height: 20px;
+	margin-top: -10px;
+		-moz-border-radius: 50px/20px;
+	-webkit-border-radius: 50px 20px;
+	border-radius: 50px/20px;
+		-webkit-transition: all 0.15s ease-in-out;
+	-moz-transition: all 0.15s ease-in-out;
+	-o-transition: all 0.15s ease-in-out;
+	-ms-transition: all 0.15s ease-in-out;
+	transition: all 0.15s ease-in-out;
+	}
+	div.css_bar_graph div.graph li.bar div.bottom	{	width: 100%;
+	height: 20px;
+	position: absolute;
+	bottom: -10px;
+	left: 0px;
+		-moz-border-radius: 50px/20px;
+	-webkit-border-radius: 50px 20px;
+	border-radius: 50px/20px;
+		-webkit-transition: all 0.15s ease-in-out;
+	-moz-transition: all 0.15s ease-in-out;
+	-o-transition: all 0.15s ease-in-out;
+	-ms-transition: all 0.15s ease-in-out;
+	transition: all 0.15s ease-in-out;
+	}
+div.css_bar_graph div.graph li.bar span	{	position: relative;
+	top: -50px;
+	padding: 3px 5px 3px 5px;
+	z-index: 100;
+	background-color: #eeeeee;
+	border: 1px solid #bebebe;
+		border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+		background-image: linear-gradient(top, #ffffff, #f1f1f1 1px, #ebebeb);
+ 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f1f1f1', endColorstr='#ebebeb');
+ /* IE5.5 - 7 */	-ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f1f1f1', endColorstr='#ebebeb');
+ 	background: -ms-linear-gradient(top, #ffffff, #f1f1f1 1px, #ebebeb);
+ 	background: -moz-linear-gradient(top, #ffffff, #f1f1f1 1px, #ebebeb);
+  	background: -o-linear-gradient(top, #ffffff, #f1f1f1 1px, #ebebeb);
+ 	background: -webkit-linear-gradient(top, #ffffff, #f1f1f1 1px, #ebebeb);
+ 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ffffff), color-stop(0.05, #f1f1f1), color-stop(1, #ebebeb));
+ /* Chrome 10, Safari */		text-shadow: 0px 1px 0px rgba(255,255,255,1);
+	box-shadow: 0px 1px 0px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0px 1px 0px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px 1px 0px rgba(0,0,0,0.1);
+		-webkit-transition: all 0.15s ease-in-out;
+	-moz-transition: all 0.15s ease-in-out;
+	-o-transition: all 0.15s ease-in-out;
+	-ms-transition: all 0.15s ease-in-out;
+	transition: all 0.15s ease-in-out;
+	}
+div.css_bar_graph div.graph li.nr_1	{	left: 110px;
+	}
+div.css_bar_graph div.graph li.nr_2	{	left: 200px;
+	}
+div.css_bar_graph div.graph li.green	{	background: #608d00;
+		background: rgba(96,141,0,0.8);
+	}
+div.css_bar_graph div.graph li.green div.top	{	background: #a2c656;
+	}
+div.css_bar_graph div.graph li.green div.bottom	{	background: #608d00;
+	}
+div.css_bar_graph div.graph li.red	{	background: #d23648;
+		background: rgba(210,54,72,0.8);
+	}
+div.css_bar_graph div.graph li.red div.top	{	background: #ea828e;
+	}
+div.css_bar_graph div.graph li.red div.bottom	{	background: #d23648;
+	}
+div.css_bar_graph div.graph li.green:hover	{	cursor: pointer;
+	background: #608d00;
+	}
+div.css_bar_graph div.graph li.red:hover	{	cursor: pointer;
+	background: #d23648;
+	}
+div.css_bar_graph div.graph li.bar:hover span	{	cursor: pointer;
+	top: -60px;
+	padding: 10px;
+	margin: 0px;
+	}
